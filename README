@@ -1,0 +1,46 @@
+OpenID RP Module for Xoops JP. 
+==============================
+Author: Nat Sakimura (=nat)
+Date: 2008-03-01
+Copyright: Nat Sakimura (=nat)
+License: GPL
+Version: 0.22
+PHP OpenID Library: php-openid-2.0.0
+
+ABSTRACT
+========
+OpenID Module enables users to login to Xoops and Xoopscube sites with their OpenID.
+Once successfully authenticated to an OpenID Provider such as Yahoo!, AOL etc., users are asked whether s/he has an existing account at the site to link the OpenID to that account or create a new one.
+Supports OpenID 2.0 and thus, XRDS, XRI, etc. Also, it supports sreg so if the OpenID Provider supports it, it can populate the Xoops users table as well.
+Tested against Yahoo!, Linksafe, 2idi.
+
+DOWNLOAD
+========
+
+http://www.sakimura.org/modules/mydownloads/visit.php?cid=1&lid=8
+
+INSTALL
+=======
+
+1. Unarchive the files under modules/ directory. 
+2. Define XOOPS_TRUST_PATH somewhere out of the web accessible path 
+   in mainfile.php
+3. Create a foloder "_php_consumer" under XOOPS_TRUST_PATH and 
+   change the permission so that it will be writable by the web server. 
+4. Install the module like other modules. 
+   (For XoopsCube, install the block as well.)
+5. Give access permission to guest group for this module. 
+6. Install block for all the modules. 
+
+TODOs
+=====
+
+1. Create Admin Panel for easy maintenance of the OpenIDs. 
+2. Make 5 and 6 above automagic. 
+3. Clean up the code
+4. Replace Dummy Admin screens to real ones. 
+5. Test on PHP 4.x. It has been only tested on PHP 5.2
+? Let me know if someone try on 4.x. 
+6. Make sreg parameters specifiable through admin screen. 
+7. sreg policy. 
+8. PAPE

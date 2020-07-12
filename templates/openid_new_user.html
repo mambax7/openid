@@ -1,0 +1,48 @@
+<pre>
+    <{$msg}>
+    <{$error}>
+    <{$success}>
+</pre>
+
+<table>
+<tr>
+<td style="width:47%;border:1px dashed #aaaaaa;padding:10px;">
+<h3 class="centerLblockTitle">このサイトに既にアカウントをお持ちの方</h3>
+以下にログインして、このOpenIDとXoopsアカウントをリンクしてください。
+<br />
+<form method="POST" action="link.php">
+<table>
+<tr><th>Xoopsユーザー名：</th><td><input type="text" name="uname" /> </td></tr>
+<tr><th>パスワード：</th><td><input type="password" name="pass" /> </td></tr>
+</table>
+<input type="submit" />
+</form>
+
+</td>
+<td style="width:6%;">&nbsp;
+</td>
+<td style="width:47%;border:1px dashed #aaaaaa;padding:10px;">
+<h3 class="centerLblockTitle">アカウントをまだお持ちでない方</h3>
+<p>
+ご希望のスクリーン名を以下に入力してください。
+</p>
+<form method="POST" action="register.php" />
+<table>
+<tr>
+<th>スクリーン名：</th><td><input type="text" name="uname" value="<{$unam}>" /></td>
+</tr>
+</table>
+<input type="submit">
+
+</form>
+
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>あなたのOpenID:</th><td><{$displayId}></td>
+</tr>
+</table>
+
+

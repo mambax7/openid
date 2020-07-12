@@ -1,0 +1,23 @@
+<form name="form1" method="get" action="<{$xoops_url}>/modules/consumer/util/try_auth.php">
+	<table width="500" border="0" align="center" cellpadding="1" cellspacing="0" bgcolor="#CCCCCC">
+		<tr valign="top"> <td> 
+		<table width="100%" border="0" cellspacing="0" cellpadding="4" bgcolor="#eeeeee">
+			<tr bgcolor="#000000"> 
+			<td width="20%" valign="top" bgcolor="#999999"><font color="#ffffff"><b>Sign In</b></font></td>
+			</tr>
+			<tr valign="top"> 
+			<td align="center" bgcolor="#dddddd"><b>Instructions:</b><br />
+			To sign in, please enter your openID url details below.</td>
+			</tr>	
+			<tr valign="top"> 
+			<td align="center">
+			<b>OpenID&nbsp;URL:</b><br> 
+			<input type="hidden" name="action" value="verify" />
+			<input type="text" name="openid_url" class="openid_login" value="" />
+			<p> <input type="submit" name="Submit" value="Sign In"></p>
+			</td>
+			</tr>
+		</table>
+		</td></tr>
+	</table>
+</form>

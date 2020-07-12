@@ -1,0 +1,17 @@
+<style>
+input.openid_login {
+   background: url(http://openid.net/login-bg.gif) no-repeat;
+   background-color: #fff;
+   background-position: 0 50%;
+   color: #000;
+   padding-left: 18px;
+   width: 100px;
+}
+</style>
+<form method="GET" action="<{$xoops_url}>/modules/openid/try_auth.php">
+<b>OpenID</b><br> 
+<input type="hidden" name="action" value="verify" />
+<input class="openid_login" type="text" name="openid_identifier" class="openid_login" value="" />
+<input type="hidden" name="frompage" value="<{$frompage}>" />
+<p> <input type="submit" name="Submit" value="Sign In"></p>
+</form>

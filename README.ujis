@@ -1,0 +1,45 @@
+OpenID RP Module for Xoops JP. ver.0.22
+=======================================
+Author: Nat Sakimura (=nat)
+Date: 2008-03-01
+Copyright: Nat Sakimura (=nat)
+License: GPL
+Version: 0.22
+PHP OpenID Library: php-openid-2.0.0
+
+概要
+====
+Xoops 2.0.x JP と XOOPS Cube Legacy 2.1.x に、 最近話題の OpenIDでログインする機能を付けたモジュールです。
+OP側は、自前、Linksafe, 2idi, Yahoo!, myopenid, openid.ne.jp, Verisign PIP, Orange.fr, hagena 他 でテストしてあります。
+OpenID 2.0 対応。XRI にも OP Identifier にも対応しています。
+sregにも対応しています。
+ver.0.2 には SQL Injection の可能性のあるバグが発見されました。すぐに、ver.0.22にアップグレードしてください。
+
+CHANGES
+=======
+0.2 → 0.22 SQLインジェクションの可能性があるバグを排除
+
+DOWNLOAD
+========
+http://www.sakimura.org/modules/mydownloads/
+
+INSTALL
+=======
+1. modules/ ディレクトリでアーカイブを展開する。 
+2. XOOPS_TRUST_PATH をmainfile.phpの中で定義。ここは、Webからアクセスできてはいけない。 
+3. 上記フォルダの中に、"_php_consumer" フォルダを作り、Webサーバに書き込み権限を与える。 
+4. 通常のモジュールのようにインストールする。 (Xoopscubeでは、Blockのインストールも忘れずに。) 
+5. ゲストグループに対して、モジュールのアクセス許可を与える。 
+6. ブロックを、全てのモジュールに対して設置する。
+
+TODOs
+=====
+1. Create Admin Panel for easy maintenance of the OpenIDs. 
+2. Make 5 and 6 above automagic. 
+3. コードを奇麗にする！　現行のは、ちょー汚いけど、許して 
+4. Admin 画面のメニューがダミーなので、それを直す。 
+5. PHP5.2でしか試していないので、4.x でもテストする。 
+　 試して動いたという方は、ご連絡をいただきたく。 
+6. 管理画面で、sreg のパラメータを選べるようにする。 
+7. sreg のポリシー対応をする。 
+8. PAPE対応をする。

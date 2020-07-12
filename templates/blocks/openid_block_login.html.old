@@ -1,0 +1,15 @@
+<h5>OpenID Login</h5>
+<form action="<{$xoops_url}>/modules/openid/consumer/try_auth.php">
+
+	<input class="openid" type="text" size="10"
+              alt="OpenID" name="openid_url"
+              tabindex="10001" />
+
+       <input class="context" type="submit" name="submit"
+              value="Log in" alt="Log in"
+              tabindex="10002" />
+
+</form>
+
+
+
